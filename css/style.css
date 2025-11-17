@@ -28,17 +28,17 @@ main {
 
 .brand-logo {
   display: inline-block;
-  width: 320px;
+  width: 200px;
   max-width: 100%;
   height: auto;
 }
 
 .brand-logo--login {
-  width: min(420px, 70vw);
+  width: min(180px, 70vw);
 }
 
 .brand-logo--header {
-  width: 200px;
+  width: 150px;
 }
 
 .btn {

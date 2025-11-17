@@ -3,11 +3,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="refresh" content="0; url=login.html">
-    <title>Redirigiendo...</title>
+    <title>Sinnut · Prueba de Logo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <style>
+        :root {
+            --gray-50: #f7f7f8;
+            --gray-100: #f0f0f1;
+            --gray-200: #e3e3e6;
+            --gray-400: #b6b6bd;
+            --gray-600: #4b4b57;
+            --gray-900: #16161d;
+            --accent: #0f172a;
+            --muted: #90909c;
+            font-family: 'Inter', 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: var(--gray-50);
+            color: var(--gray-900);
+            font-family: inherit;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            width: 100%;
+            background-color: white;
+            border-radius: 24px;
+            padding: 3rem;
+            box-shadow: 0 30px 60px rgba(28, 30, 35, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--muted);
+            margin-bottom: 3rem;
+        }
+
+        .logo-preview {
+            background: 
+                linear-gradient(45deg, #f0f0f1 25%, transparent 25%),
+                linear-gradient(-45deg, #f0f0f1 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #f0f0f1 75%),
+                linear-gradient(-45deg, transparent 75%, #f0f0f1 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+        }
+
+        .logo-preview img {
+            max-width: 200px;
+            height: auto;
+            display: inline-block;
+        }
+
+        .logo-info {
+            background-color: var(--gray-50);
+            padding: 1rem 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: var(--gray-600);
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .option-card {
+            border: 1px solid var(--gray-200);
+            border-radius: 16px;
+            padding: 2rem;
+            text-align: center;
+            text-decoration: none;
+            color: var(--gray-900);
+            transition: all 0.2s ease;
+            background-color: white;
+        }
+
+        .option-card:hover {
+            border-color: var(--gray-400);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(28, 30, 35, 0.08);
+        }
+
+        .option-card h2 {
+            margin: 0 0 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .option-card p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
-    <p>Redirigiendo a la página de login...</p>
-    <p>Si no eres redirigido automáticamente, <a href="login.html">haz clic aquí</a>.</p>
+    <div class="container">
+        <h1>🎨 Prueba de Logo Sinnut</h1>
+        <p class="subtitle">Vista previa del logo animado y opciones de visualización</p>
+        
+        <div class="logo-preview">
+            <img src="assets/logo.gif" alt="Logo Sinnut animado" />
+        </div>
+
+        <div class="logo-info">
+            <p><strong>📋 Información del logo:</strong></p>
+            <p>• Formato: GIF animado con fondo transparente</p>
+            <p>• El fondo cuadriculado simula la transparencia</p>
+            <p>• Tamaño recomendado: 150-200px de ancho</p>
+        </div>
+
+        <h3 style="text-align: center; margin-top: 2rem; margin-bottom: 1rem;">Selecciona una vista para probar:</h3>
+
+        <div class="options">
+            <a href="login.html" class="option-card">
+                <div class="icon">🔐</div>
+                <h2>Vista Login</h2>
+                <p>Ver el logo en la página de inicio de sesión</p>
+            </a>
+
+            <a href="dashboard.html" class="option-card">
+                <div class="icon">📊</div>
+                <h2>Vista Dashboard</h2>
+                <p>Ver el logo en el encabezado del sistema</p>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
