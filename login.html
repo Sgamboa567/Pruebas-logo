@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinnut · Demo login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="login-page">
+      <article class="login-card">
+        <img src="assets/logo.gif" alt="Logo animado" class="brand-logo brand-logo--login" />
+        <h2>Bienvenido</h2>
+        <p>Selecciona el método de ingreso para iniciar sesión.</p>
+        <div class="login-actions">
+          <button class="btn">
+            <span class="icon-circle">ID</span>
+            <span>Entrar con documento</span>
+          </button>
+          <button class="btn">
+            <span class="icon-circle">FP</span>
+            <span>Entrar con huella</span>
+          </button>
+          <button class="btn">
+            <span class="icon-circle">@</span>
+            <span>Entrar con correo</span>
+          </button>
+        </div>
+        <div class="notice">
+          <strong>⚠️ No se encontró lector biométrico conectado.</strong>
+          <p>Conecte el lector biométrico y vuelva a cargar la página.</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
