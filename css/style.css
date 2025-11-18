@@ -28,7 +28,7 @@ main {
 
 .brand-logo {
   display: inline-block;
-  width: 200px;
+  width: 260px;
   max-width: 100%;
   height: auto;
   /* Asegurar que el logo se vea bien en cualquier fondo */
@@ -36,11 +36,11 @@ main {
 }
 
 .brand-logo--login {
-  width: min(240px, 90vw);
+  width: min(320px, 90vw);
 }
 
 .brand-logo--header {
-  width: 150px;
+  width: 200px;
 }
 
 .btn {

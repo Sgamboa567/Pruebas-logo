@@ -12,7 +12,16 @@
   <body>
     <main class="login-page">
       <article class="login-card">
-        <img src="assets/logo.gif" alt="Logo animado" class="brand-logo brand-logo--login" />
+        <img
+          src="assets/logo.png"
+          alt="Logo animado"
+          class="brand-logo brand-logo--login"
+          data-gif-loop
+          data-gif-src="assets/logo.gif"
+          data-gif-still="assets/logo.png"
+          data-gif-duration="3000"
+          data-gif-pause="5000"
+        />
         <h2>Bienvenido</h2>
         <p>Selecciona el método de ingreso para iniciar sesión.</p>
         <div class="login-actions">
@@ -35,5 +44,6 @@
         </div>
       </article>
     </main>
+    <script src="js/logo-loop.js"></script>
   </body>
 </html>
