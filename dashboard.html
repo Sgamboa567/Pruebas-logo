@@ -12,7 +12,16 @@
   <body>
     <main>
       <header class="header">
-        <img src="assets/logo.gif" alt="Logo animado" class="brand-logo brand-logo--header" />
+        <img
+          src="assets/logo.png"
+          alt="Logo animado"
+          class="brand-logo brand-logo--header"
+          data-gif-loop
+          data-gif-src="assets/logo.gif"
+          data-gif-still="assets/logo.png"
+          data-gif-duration="3000"
+          data-gif-pause="5000"
+        />
         <h1>Notas de crédito</h1>
         <div class="search-shell">
           <span aria-hidden="true">🔍</span>
@@ -54,5 +63,6 @@
         </div>
       </section>
     </main>
+    <script src="js/logo-loop.js"></script>
   </body>
 </html>
