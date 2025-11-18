@@ -74,9 +74,19 @@
         }
 
         .logo-preview img {
-            max-width: 200px;
+            max-width: 280px;
             height: auto;
             display: inline-block;
+        }
+
+        .brand-logo {
+            width: 260px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .brand-logo--preview {
+            width: min(320px, 100%);
         }
 
         .logo-info {
@@ -135,7 +145,15 @@
         <p class="subtitle">Vista previa del logo animado y opciones de visualización</p>
         
         <div class="logo-preview">
-            <img src="assets/logo.gif" alt="Logo Sinnut animado" />
+            <img
+                src="assets/logo.gif"
+                alt="Logo Sinnut animado"
+                class="brand-logo brand-logo--preview"
+                data-gif-loop
+                data-gif-src="assets/logo.gif"
+                data-gif-duration="3000"
+                data-gif-pause="5000"
+            />
         </div>
 
         <div class="logo-info">
@@ -161,5 +179,7 @@
             </a>
         </div>
     </div>
+
+    <script src="js/logo-loop.js"></script>
 </body>
 </html>

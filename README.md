@@ -7,14 +7,13 @@ Ambiente estático para replicar las dos pantallas del ERP (login y módulo de n
 - `login.html`: Maqueta del formulario de ingreso.
 - `dashboard.html`: Vista posterior al ingreso con la tabla de notas de crédito.
 - `css/styles.css`: Estilos compartidos para ambas páginas.
-- `assets/logo.gif`: Logo animado utilizado en ambas pantallas (puedes reemplazarlo por tu GIF real).
-- `assets/logo.png`: Fotograma estático de referencia del logo.
+- `assets/logo.gif`: Logo animado utilizado en todas las pantallas (puedes reemplazarlo por tu GIF real).
 
 ## Uso
 
 Simplemente abre cualquiera de los archivos `.html` en tu navegador para visualizar las pantallas. No se requiere ningún backend ni servidor adicional.
 
-Si deseas cambiar el logo o el GIF por los archivos corporativos definitivos, sustituye los archivos dentro de `assets/` conservando los mismos nombres.
+Si deseas cambiar el logo animado por el archivo corporativo definitivo, sustituye `assets/logo.gif` manteniendo el mismo nombre.
 
 ### Personalización visual
 
